@@ -135,11 +135,11 @@ EXAMPLE 2 RDF: Property `spdx:relationship` in any `spdx:SpdxDocument`, `spdx:Pa
 
 **Description**
 
-This field provides a place for the SPDX file creator to record any general comments about the relationship.
+This field provides a place for the SPDX Document creator to record any general comments about the relationship.
 
 **Intent**
 
-Here, the intent is to provide the recipient of the SPDX file with more information determined after careful analysis of the relationship between two elements in an SPDX file.
+Here, the intent is to provide the recipient of the SPDX Document with more information determined after careful analysis of the relationship between two elements in an SPDX Document.
 
 **Metadata**
 

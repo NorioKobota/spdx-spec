@@ -4,11 +4,11 @@
 
 **Description**
 
-Provide a locally unique identifier to refer to licenses that are not found on the SPDX License List. This unique identifier can then be used in the packages and files sections of the SPDX file (Clause [7](package-information.md) and Clause [8](file-information.md), respectively).
+Provide a locally unique identifier to refer to licenses that are not found on the SPDX License List. This unique identifier can then be used in the packages and files sections of the SPDX Document (Clause [7](package-information.md) and Clause [8](file-information.md), respectively).
 
 **Intent**
 
-Create a human readable short form license identifier for a license not on the SPDX License List. This identifier shall be unique within the SPDX file. In previous versions of SPDX, the references were required to be sequential numbers, but as of version 1.2, creators may specify references that are easier for humans to remember and mentally map.
+Create a human readable short form license identifier for a license not on the SPDX License List. This identifier shall be unique within the SPDX Document. In previous versions of SPDX, the references were required to be sequential numbers, but as of version 1.2, creators may specify references that are easier for humans to remember and mentally map.
 
 **Metadata**
 
@@ -190,11 +190,11 @@ EXAMPLE 2 RDF: Property `rdfs:seeAlso` in class `spdx:ExtractedLicensingInfo`
 
 **Description**
 
-This field provides a place for the SPDX file creator to record any general comments about the license.
+This field provides a place for the SPDX Document creator to record any general comments about the license.
 
 **Intent**
 
-Here, the intent is to provide the recipient of the SPDX file with more information determined after careful analysis of a license, or addition cross references.
+Here, the intent is to provide the recipient of the SPDX Document with more information determined after careful analysis of a license, or addition cross references.
 
 **Metadata**
 
