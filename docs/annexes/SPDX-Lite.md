@@ -93,7 +93,17 @@ And all /Software/Package objects MUST have “downloadLocation” OR “package
    | 16 | /Software/Package/packageUrl			| 0..1	| |  
    | 17 | /Software/Package/homepage			| 0..1	| |  
 
-8. For a /Core/Hash to be conformant with this profile, the following has to hold:  
+8. For a /Software/File to be conformant with this profile, the following has to hold:  
+
+   | # | Property Name | Cardinality | Comments |  
+   |:-:|:--|:--|:--|  
+   | 1 | /Software/File/spdxId			      | 1..1	| |  
+   | 2 | /Software/File/name			         | 1..1	| |  
+   | 3 | /Software/File/comment			      | 0..1	| |  
+   | 4 | /Software/File/creationInfo			| 1..1	| |  
+   | 5 | /Software/File/verifiedUsing		   | 0..1	| This should be an object of /Core/Hash |  
+
+9. For a /Core/Hash to be conformant with this profile, the following has to hold:  
 
    | # | Property Name | Cardinality | Comments |  
    |:-:|:--|:--|:--|  
@@ -101,20 +111,20 @@ And all /Software/Package objects MUST have “downloadLocation” OR “package
    | 2 | /Core/Hash/hashValue	| 1..1	| |  
    | 3 | /Core/Hash/comment		| 0..1	| |  
 
-9. For a /Core/Relationship to be conformant with this profile, the following has to hold:  
+10. For a /Core/Relationship to be conformant with this profile, the following has to hold:  
 
-   1. for every /Software/Package object MUST exist exactly one /Core/Relationship object of type ```concludedLicense``` having that element as its ```from``` property and an /SimpleLicensing/AnyLicenseInfo as its ```to``` property.  
-   2. for every /Software/Package object MUST exist exactly one /Core/Relationship object of type ```declaredLicense``` having that element as its ```from``` property and  /SimpleLicensing/AnyLicenseInfo object as its ```to``` property.  
+    1. for every /Software/Package object MUST exist exactly one /Core/Relationship object of type ```concludedLicense``` having that element as its ```from``` property and an /SimpleLicensing/AnyLicenseInfo as its ```to``` property.  
+    2. for every /Software/Package object MUST exist exactly one /Core/Relationship object of type ```declaredLicense``` having that element as its ```from``` property and  /SimpleLicensing/AnyLicenseInfo object as its ```to``` property.  
 
-   | # | Property Name | Cardinality | Comments |  
-   |:-:|:--|:--|:--|  
-   | 1 | /Core/Relationship/spdxId			    | 1..1	| |  
-   | 2 | /Core/Relationship/creationInfo		| 1..1	| |  
-   | 3 | /Core/Relationship/from 				| 1..1	| |  
-   | 4 | /Core/Relationship/to 			    	| 1..*	| |  
-   | 5 | /Core/Relationship/relationshipType	| 1..1	| |  
+    | # | Property Name | Cardinality | Comments |  
+    |:-:|:--|:--|:--|  
+    | 1 | /Core/Relationship/spdxId			    | 1..1	| |  
+    | 2 | /Core/Relationship/creationInfo		| 1..1	| |  
+    | 3 | /Core/Relationship/from 				| 1..1	| |  
+    | 4 | /Core/Relationship/to 			    	| 1..*	| |  
+    | 5 | /Core/Relationship/relationshipType	| 1..1	| |  
 
-10. For a /SimpleLicensing/LicenseExpression to be conformant with this profile, the following has to hold:  
+11. For a /SimpleLicensing/LicenseExpression to be conformant with this profile, the following has to hold:  
 
     | # | Property Name | Cardinality | Comments |  
     |:-:|:--|:--|:--|  
@@ -123,7 +133,7 @@ And all /Software/Package objects MUST have “downloadLocation” OR “package
     | 3 | /SimpleLicensing/LicenseExpression/licenseExpression	| 1..1	| |  
     | 4 | /SimpleLicensing/LicenseExpression/licenseListVersion	| 0..1	| |  
 
-11. For a /SimpleLicensing/SimpleLicensingText to be conformant with this profile, the following has to hold:  
+12. For a /SimpleLicensing/SimpleLicensingText to be conformant with this profile, the following has to hold:  
 
     | # | Property Name | Cardinality | Comments |  
     |:-:|:--|:--|:--|  
